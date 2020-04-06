@@ -1,0 +1,17 @@
+﻿<Window x:Class="Q1_WPFSynchronous.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Q1_WPFSynchronous"
+        mc:Ignorable="d"
+        Title="Factorial Number - Synchronous Programming" Height="340" Width="340" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Please enter a number:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NumberTextBox" HorizontalAlignment="Left" Height="26" Margin="146,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" VerticalContentAlignment="Center"/>
+        <Button x:Name="CalculateFactorialButton" Content="Calculate Factorial Number" HorizontalAlignment="Left" Margin="146,41,0,0" VerticalAlignment="Top" Width="167" Height="26" Click="CalculateFactorialButton_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="218" Margin="10,72,0,0" Stroke="Black" VerticalAlignment="Top" Width="303"/>
+        <TextBlock x:Name="ResultTextBox" HorizontalAlignment="Left" Margin="19,81,0,0" TextWrapping="Wrap" Text="-----" VerticalAlignment="Top" Width="285" Height="201" IsEnabled="False"/>
+
+    </Grid>
+</Window>
