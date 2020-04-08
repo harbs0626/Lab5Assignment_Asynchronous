@@ -164,6 +164,7 @@ namespace Q1_WPFAsynchronous
         {
             var result = from s in Stock.ListStocks
                          where s.Symbol == this.SearchTextBox.Text ||
+                               s.Date == this.SearchTextBox.Text ||
                                s.Open.Contains(this.SearchTextBox.Text) ||
                                s.High.Contains(this.SearchTextBox.Text) ||
                                s.Low.Contains(this.SearchTextBox.Text) ||
